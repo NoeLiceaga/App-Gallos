@@ -1,6 +1,7 @@
-const { app, BrowserWindow, ipcMain, Menu } = require('electron');
+const { app, BrowserWindow, ipcMain, Menu,BrowserView } = require('electron');
 const url = require('url');
 const path = require('path');
+const ejse = require('ejs-electron');
 
 if(process.env.NODE_ENV !== 'production'){
     require('electron-reload')(__dirname,{
@@ -12,6 +13,7 @@ if(process.env.NODE_ENV !== 'production'){
 let mainWindows;
 let newProductWindow;
 
+
 app.on('ready', () => {
     mainWindows = new BrowserWindow({
         webPreferences:{
@@ -21,11 +23,10 @@ app.on('ready', () => {
         }
     });
     mainWindows.loadURL(url.format({
-        pathname: path.join(__dirname, 'views/index.htm'),
-        protocol: 'file',
+        pathname: path.join(__dirname, 'views/index.ejs'),
+        protocol: '',
         slashes: true
     }))
-
     const mainMenu = Menu.buildFromTemplate(templateMenu);
     Menu.setApplicationMenu(mainMenu);
 
@@ -72,6 +73,8 @@ ipcMain.on('product:new', (e, newProduct) => {
 });
 
 function createNewProduct(){
+
+
     newProductWindow =  new BrowserWindow({
         width:400,
         height:300,
@@ -92,6 +95,7 @@ function createNewProduct(){
     newProductWindow.on('closed',()=>{
         newProductWindow = null;
     });
+
 }
 
 if(process.env.NODE_ENV !== 'production'){
