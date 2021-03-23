@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, Menu,BrowserView } = require('electron');
+const { app, BrowserWindow, ipcMain, Menu, BrowserView } = require('electron');
 const url = require('url');
 const path = require('path');
 const ejse = require('ejs-electron');
@@ -23,8 +23,8 @@ app.on('ready', () => {
         }
     });
     mainWindows.loadURL(url.format({
-        pathname: path.join(__dirname, 'views/index.ejs'),
-        protocol: '',
+        pathname: path.join(__dirname, 'views/index.htm'),
+        protocol: 'file',
         slashes: true
     }))
     const mainMenu = Menu.buildFromTemplate(templateMenu);
@@ -97,6 +97,7 @@ function createNewProduct(){
     });
 
 }
+
 
 if(process.env.NODE_ENV !== 'production'){
     templateMenu.push({

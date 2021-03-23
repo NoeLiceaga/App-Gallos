@@ -19,6 +19,8 @@
   "homepage": "https://github.com/NoeLiceaga/App-Gallos#readme",
   "dependencies": {
     "bootstrap": "^5.0.0-beta2",
+    "bootswatch": "^4.6.0",
+    "boxicons": "^2.0.7",
     "ejs": "^3.1.6",
     "ejs-electron": "^2.1.1",
     "electron": "^12.0.1",
