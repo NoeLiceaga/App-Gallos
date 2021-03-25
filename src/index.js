@@ -1,7 +1,6 @@
 const { app, BrowserWindow, ipcMain, Menu, BrowserView } = require('electron');
 const url = require('url');
 const path = require('path');
-const ejse = require('ejs-electron');
 
 if(process.env.NODE_ENV !== 'production'){
     require('electron-reload')(__dirname,{
@@ -19,7 +18,7 @@ app.on('ready', () => {
         webPreferences:{
             nodeIntegration: true,
             contextIsolation: false,
-            enableRemoteModule: true
+            enableRemoteModule: true,
         }
     });
     mainWindows.loadURL(url.format({
@@ -29,7 +28,7 @@ app.on('ready', () => {
     }))
     const mainMenu = Menu.buildFromTemplate(templateMenu);
     Menu.setApplicationMenu(mainMenu);
-
+    mainWindows.maximize();
     mainWindows.on('closed',()=>{
         app.quit();
     });
@@ -105,7 +104,7 @@ if(process.env.NODE_ENV !== 'production'){
         submenu: [
             {
                 label: 'Show/Hide Dev Tools',
-                accelerator: 'Ctr+D',
+                accelerator: 'Ctrl+D',
                 click(item, focusedWindow){
                     focusedWindow.toggleDevTools();
                 }

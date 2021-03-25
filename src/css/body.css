@@ -1,3 +1,21 @@
 .container-fluid{
     margin-top: 4rem;
 }
+table{
+    font-size: 13px;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+#vs{
+    width: 60px;
+    height: 60px;
+    border: solid black 2px;
+    border-radius: 50%;
+}
+#img-sorteos{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-right: 5px;
+}

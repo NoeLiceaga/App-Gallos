@@ -31,7 +31,7 @@
         <nav class="nav">
             <div>
                 <a href="#" class="nav__logo">
-                    <i class='bx bx-layer nav__logo-icon'></i>
+                    <i class='bx bx-home-alt nav__logo-icon'></i>
                     <span class="nav__logo-name">APP GALLOS</span>
                 </a>
 
@@ -64,15 +64,83 @@
             </a>
         </nav>
     </div>
-    <div class="jumbotron">
-        <h1 class="display-3">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
-      </div>  
+    <div class="container d-flex flex-wrap m-0 justify-content-start">
+        <div class="container h-50">
+            <div class="container d-inline-flex">
+                <h1 class="align-content-center">Registro de Peleas</h1>
+                <button class="btn btn-primary h-10 ml-5">Registrar</button>
+            </div>
+            <div class="container d-inline-flex fs-5">
+                <table  class="table table-hover m-1">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Repesentante</th>
+                        <th scope="col">Gallo</th>
+                        <th scope="col">Lugar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                        <th scope="row">1</th>
+                        <td>Noe Liceaga</td>
+                        <td>Segundo</td>
+                        <td>Culiacan</td>
+                        </tr>
+                </table>
+                <img class="m-1 justify-content-center align-self-center" id="vs" src="../img/icons/vs.png" alt="">
+                <table  class="table table-hover m-1">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Repesentante</th>
+                        <th scope="col">Gallo</th>
+                        <th scope="col">Lugar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                        <th scope="row">Active</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container h-25">
+            <div class="d-inline-flex m-1">
+                <img src="../img/icons/battle.png" alt="" id="img-sorteos">
+                <h1 class="justify-content-center align-self-center">Sorteos</h1>
+            </div>
+            <div class="container">
+                <div>
+                    <div class="card border-secondary mb-3" style="max-width: 20rem;">
+                        <div class="d-inline-flex justify-content-center align-items-center">
+                            <div class="card-body">
+                                <fieldset class="form-group">
+                                  <legend>Tolerancia</legend>
+                                  <div class="form-check">
+                                      <div class="custom-control custom-radio">
+                                          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                                          <label class="custom-control-label" for="customRadio1">Gramos</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                          <label class="custom-control-label" for="customRadio2">Libras</label>
+                                        </div>
+                                </fieldset>
+                             </div>
+                            <div class="m-1">
+                                <label class="col-form-label" for="inputDefault">Cantidad</label>
+                                <input type="text" class="form-control" placeholder="Ingrese" id="inputDefault">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../Js/indexhtm.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
