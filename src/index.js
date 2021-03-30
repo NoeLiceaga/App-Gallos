@@ -75,7 +75,7 @@ function createNewProduct(){
 
 
     newProductWindow =  new BrowserWindow({
-        width:400,
+        width:610,
         height:300,
         title: 'Add a new product',
         webPreferences:{

@@ -57,91 +57,157 @@
                     </a>
                 </div>
             </div>
-
             <a href="#" class="nav__link">
                 <i class='bx bx-log-out nav__icon' ></i>
                 <span class="nav__name">Log Out</span>
             </a>
         </nav>
     </div>
-    <div class="container d-flex flex-wrap m-0 justify-content-start">
-        <div class="container h-50">
-            <div class="container d-inline-flex">
-                <h1 class="align-content-center">Registro de Peleas</h1>
-                <button class="btn btn-primary h-10 ml-5">Registrar</button>
+    <div class="contenedor">
+        <main>
+            <div class="titulos">
+                <img src="../img/icons/create.png" alt="">
+                <h4 class="">Generar Pelea Pactada</h4>
             </div>
-            <div class="container d-inline-flex fs-5">
-                <table  class="table table-hover m-1">
-                    <thead>
-                        <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Repesentante</th>
-                        <th scope="col">Gallo</th>
-                        <th scope="col">Lugar</th>
-                        </tr>
+            <div class="tabla1">
+                <table class="table table-hover">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">Numero</th>
+                        <th scope="col">Column </th>
+                        <th scope="col">Column </th>
+                        <th scope="col">Column </th>
+                      </tr>
                     </thead>
                     <tbody>
-                        <tr class="table-active">
-                        <th scope="row">1</th>
-                        <td>Noe Liceaga</td>
-                        <td>Segundo</td>
-                        <td>Culiacan</td>
-                        </tr>
-                </table>
-                <img class="m-1 justify-content-center align-self-center" id="vs" src="../img/icons/vs.png" alt="">
-                <table  class="table table-hover m-1">
-                    <thead>
-                        <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Repesentante</th>
-                        <th scope="col">Gallo</th>
-                        <th scope="col">Lugar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table-active">
+                      <tr class="table-active">
                         <th scope="row">Active</th>
                         <td>Column content</td>
                         <td>Column content</td>
                         <td>Column content</td>
-                        </tr>
+                      </tr>
+                    </tbody>
                 </table>
             </div>
-        </div>
-        <div class="container h-25">
-            <div class="d-inline-flex m-1">
-                <img src="../img/icons/battle.png" alt="" id="img-sorteos">
-                <h1 class="justify-content-center align-self-center">Sorteos</h1>
+            <div class="tabla2">
+                <table class="table table-hover">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Column </th>
+                        <th scope="col">Column </th>
+                        <th scope="col">Column </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-active">
+                        <th scope="row">Active</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                      </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="container">
-                <div>
-                    <div class="card border-secondary mb-3" style="max-width: 20rem;">
-                        <div class="d-inline-flex justify-content-center align-items-center">
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                  <legend>Tolerancia</legend>
-                                  <div class="form-check">
-                                      <div class="custom-control custom-radio">
-                                          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-                                          <label class="custom-control-label" for="customRadio1">Gramos</label>
-                                        </div>
-                                        <div class="custom-control custom-radio">
-                                          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                          <label class="custom-control-label" for="customRadio2">Libras</label>
-                                        </div>
-                                </fieldset>
-                             </div>
-                            <div class="m-1">
-                                <label class="col-form-label" for="inputDefault">Cantidad</label>
-                                <input type="text" class="form-control" placeholder="Ingrese" id="inputDefault">
-                            </div>
+            <div class="img-tablas">
+                <img src="../img/icons/swords.png" alt="">
+            </div>
+            <div class="subtitulo">
+                <div class="subtitulo-1 w-50 ml-4">
+                    <img src="../img/icons/shuffle.png" alt="">
+                    <h4>Generar Pelea Random</h4>
+                </div>
+                <div class="subtitulo-2 w-25">  
+                    <button type="button" class="btn btn-warning disabled ml-lg-5">Gallos sin emparejar</button>                    
+                </div>      
+            </div>
+            <div class="condiciones" >
+                <div class="condiciones-titulo">
+                    <h5 class="font-weight-bold">Rango de Peso</h5>
+                </div>
+                <div class="d-flex condiciones-data">
+                    <div class="form-group ml-2 pr-3">
+                        <div class="custom-control custom-radio pt-4">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                        <label class="custom-control-label" for="customRadio1">Gramos</label>
                         </div>
+                        <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Onzas</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h6 class="font-weight-bold">Cantidad</h5>
+                        <input type="text" class="w-75 text-center">
+                    </div>
+                </div>
+                <div class="condiciones-data-cantidad">
+                    <div class="condiciones-titulo">
+                        <h5 class="font-weight-bold">Cantidad a Cotejar</h5>
+                    </div>
+                    <div class="gallos-cantidad-texto">
+                        <h6 class="font-weight-bold">Ingrese la cantidad</h6>
+                    </div>
+                    <div class="cantidad-gallos">
+                        <input type="text" class="w-75">
+                        <button type="button" class="btn btn-danger btn-lg">Danger</button>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="tabla-peleas">
+                <table class="table">
+                    <thead class="table-dark">
+                        <th scope="col">Type</th>
+                        <th scope="col">Column heading</th>
+                        <th scope="col">Column heading</th>
+                        <th scope="col">Column heading</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Active</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Active</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Active</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Active</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Active</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Active</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </main>
     </div>
+</div>
+    
     <script src="../Js/indexhtm.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
