@@ -27,7 +27,6 @@ table{
     gap: 20px;
     grid-template-rows: repeat(1,60px 1fr 50px 2fr);
     grid-template-columns: repeat(3,1fr) 60px repeat(3,1fr);
-    overflow: hidden;
     /* grid-template-areas:    "Titulo1   Titulo1    Titulo1   Titulo1   Titulo1  Titulo1    Titulo1"
                             "Tabla1   Tabla1    Tabla1    Imagen    Tabla1    Tabla1    Tabla1"; */
 }
@@ -149,4 +148,6 @@ table{
 .contenedor .tabla-peleas{
     grid-column: 3/8;
     grid-row: 4/5;
+    overflow-y: auto;
+    height: 100%;
 }
