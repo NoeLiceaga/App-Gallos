@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../../node_modules/boxicons/fonts/boxicons.ttf">
     <link rel="stylesheet" href="../fonts/Roboto-Regular.ttf">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../../node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../../node_modules/animate.css/source/fading_entrances/fadeIn.css">
     <link href="../fonts/Roboto-Regular.ttf">
     <title>Products Elements</title>
 </head>
@@ -70,16 +72,16 @@
         <input type="radio" name="slider" id="code">
         <input type="radio" name="slider" id="help">
         <input type="radio" name="slider" id="about">
-        <nav>
-          <label for="home" class="home"><i class="fas fa-home"></i>Peleas Pactadas</label>
-          <label for="blog" class="blog"><i class="fas fa-blog"></i>Pesos Libres</label>
-          <label for="code" class="code"><i class="fas fa-code"></i>Gallos Libres</label>
-          <label for="help" class="help"><i class="far fa-envelope"></i>Peleas Generadas</label>
+        <nav class="animate__animated animate__fadeIn">
+          <label for="home" class="home"><i class="bx bx-key"></i>Peleas Pactadas</label>
+          <label for="blog" class="blog"><i class="bx bx-world"></i>Pesos Libres</label>
+          <label for="code" class="code"><i class="bx bx-folder-open"></i>Gallos Libres</label>
+          <label for="help" class="help"><i class="bx bx-task"></i>Peleas Generadas</label>
           <label for="about" class="about"><i class="far fa-user"></i>About</label>
           <div class="slider"></div>
         </nav>
         <section>
-          <div class="content content-1">
+          <div class="animate__animated animate__fadeIn content content-1">
             <div class="title1">
                 <img src="../img/icons/create.png" alt="">
                 <h4 class="font-weight-light">Generar Pelea Pactada</h4>
@@ -131,10 +133,10 @@
             </main>
           </div>
 
-          <div class="content content-2">
+          <div class="animate__animated animate__fadeIn content content-2">
             <div class="subtitulo">
                 <img src="../img/icons/shuffle.png" alt="">
-                <h4>Generar Pelea Random</h4>  
+                <h4 class="pl-3">Generar Pelea Aleatoria</h4>  
             </div>
             <div class="condiciones" >
                 <div class="condiciones-data">
@@ -168,7 +170,7 @@
                         <input type="text" class="w-100">
                     </div>
                     <div class="btn-gallos">
-                        <button type="button" class="btn btn-danger w-100">Danger</button>
+                        <button type="button" class="btn btn-danger w-100">Cotejar</button>
                     </div>
                 </div>
             </div>
