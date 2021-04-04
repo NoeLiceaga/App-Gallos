@@ -1,4 +1,4 @@
-.container-fluid{
+/* .container-fluid{
     margin-top: 4rem;
 }
 body{
@@ -28,9 +28,9 @@ table{
     grid-template-rows: repeat(1,60px 1fr 50px 2fr);
     grid-template-columns: repeat(3,1fr) 60px repeat(3,1fr);
     /* grid-template-areas:    "Titulo1   Titulo1    Titulo1   Titulo1   Titulo1  Titulo1    Titulo1"
-                            "Tabla1   Tabla1    Tabla1    Imagen    Tabla1    Tabla1    Tabla1"; */
-}
-.contenedor .titulos{
+                            "Tabla1   Tabla1    Tabla1    Imagen    Tabla1    Tabla1    Tabla1";
+}*/
+/* .contenedor .titulos{
     display: flex;
     grid-column: 1/8;
     grid-row: 1/2;  
@@ -150,4 +150,223 @@ table{
     grid-row: 4/5;
     overflow-y: auto;
     height: 100%;
+} */
+
+
+body{
+overflow-y: hidden;
 }
+::selection{
+  background: rgba(23,162,184,0.3);
+}
+.wrapper{
+  width: 100%;
+  padding: 15px 30px 30px 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper header{
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.wrapper nav{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.wrapper nav label{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #17a2b8;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.wrapper nav label:hover{
+  background: rgba(23,162,184,0.3);
+}
+#home:checked ~ nav label.home,
+#blog:checked ~ nav label.blog,
+#code:checked ~ nav label.code,
+#help:checked ~ nav label.help,
+  #about:checked ~ nav label.about{
+  color: #fff;
+}
+nav label i{
+  padding-right: 7px;
+}
+nav .slider{
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: #17a2b8;
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#blog:checked ~ nav .slider{
+  left: 20%;
+}
+#code:checked ~ nav .slider{
+  left: 40%;
+}
+#help:checked ~ nav .slider{
+  left: 60%;
+}
+#about:checked ~ nav .slider{
+  left: 80%;
+}
+section .content{
+  display: none;
+  background: #fff;
+}
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3,
+#help:checked ~ section .content-4,
+#about:checked ~ section .content-5{
+  display: block;
+}
+section .content .title{
+  font-size: 21px;
+  font-weight: 500;
+  margin: 10px 0 10px 0;
+}
+/*Primera seccion*/
+.title1{
+    margin: 5px 0 10px 0;
+    background: #49d43c;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.title1 img{
+    width: 24px;
+    margin: 10px;
+}
+.tabla1,.tabla2{
+    height: 200px;
+    overflow-y:scroll;
+    padding: 2px;
+}
+.tabla1 table,
+.tabla2 table{
+    font-size: 12px;
+}
+.tabla1 table tr:hover,
+.tabla2 table tr:hover{
+    cursor: pointer;
+}
+.tabla2{
+    margin-top: 5px;
+}
+button{
+    margin-bottom: 10px;
+}
+/*Primera Seccion*/
+/*Segunda Seccion*/
+.content-2 .subtitulo{
+    margin: 5px 0 10px 0;
+    background: #49d43c;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.subtitulo img{
+    width: 24px;
+}
+.condiciones{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,75px);
+    justify-content: center;
+    align-items: center;
+}
+.condiciones-data,
+.condiciones-data-cantidad{
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,50px);
+}
+.condiciones-data{
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+.condiciones-data-cantidad{
+    grid-row: 1/3;
+    grid-column: 4/7;
+}
+.condiciones-titulo{
+    background: orange;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    width: 100%;
+    padding: 5px;
+}
+.radiobtns{
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+.cantidad-input{
+    grid-column: 3/5;
+    grid-row: 2/4;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.gallos-cantidad-texto{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: center;
+    justify-self: center;
+    align-self:center;
+}
+.cantidad-gallos{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+.cantidad-gallos input{
+    text-align: center;
+}
+.btn-gallos{
+    grid-column: 1/7;
+    grid-row: 3/4;
+    padding: 5px 7px 7px 5px;
+}
+.tabla-peleas{
+    height: 240px;
+    overflow-y:scroll;
+    padding: 2px;
+}
+.tabla-peleas table{
+    font-size: 12px;
+}
+/*Segunda Seccion*/

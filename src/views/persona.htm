@@ -16,7 +16,42 @@
     <title>Add new product</title>
 </head>
 <body>
-    <section class="contact-box">
+    <div class="container">
+        <div class="card border-success mb-3">
+            <div class="card-header">Ingrese sus datos aqui</div>
+            <div class="card-img container-img">
+                <div class="img"><img src="../img/icons/rooster.png" alt=""></div>
+            </div>
+            <div class="card-body">
+              <form action="" class="card-text">
+                <div class="contenedor-alta">
+                    <div class="form-group">
+                        <label class="font-weight-bold" >Nombre <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-gr oup">
+                        <label class="font-weight-bold">Apellidos <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" placeholder="Apellidos" required>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold">Lugar de Procedencia<span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" placeholder="Ingresa el lugar de procedencia" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputState" class="form-label font-weight-bold">Gallo</label>
+                        <select id="inputState" class=" form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-danger form-group w-100  ">Registrar</button>
+                </div>
+            </form>
+            </div>
+          </div>
+    </div>
+    <!-- <section class="contact-box">
         <div class="row no-gutters bg-dark">
             <div class="col-xl-5 col-lg-8 register-bg d-inline-flex">
                 <div class="testiomonial p-4">
@@ -56,7 +91,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <script src="../Js/new-product.js"></script>
 </body>
 </html>

@@ -63,94 +63,112 @@
             </a>
         </nav>
     </div>
-    <div class="contenedor container-fluid">
-        <main>
-            <div class="titulos">
+    <div class="wrapper">
+        <header>Inicio</header>
+        <input type="radio" name="slider" checked id="home">
+        <input type="radio" name="slider" id="blog">
+        <input type="radio" name="slider" id="code">
+        <input type="radio" name="slider" id="help">
+        <input type="radio" name="slider" id="about">
+        <nav>
+          <label for="home" class="home"><i class="fas fa-home"></i>Peleas Pactadas</label>
+          <label for="blog" class="blog"><i class="fas fa-blog"></i>Pesos Libres</label>
+          <label for="code" class="code"><i class="fas fa-code"></i>Gallos Libres</label>
+          <label for="help" class="help"><i class="far fa-envelope"></i>Peleas Generadas</label>
+          <label for="about" class="about"><i class="far fa-user"></i>About</label>
+          <div class="slider"></div>
+        </nav>
+        <section>
+          <div class="content content-1">
+            <div class="title1">
                 <img src="../img/icons/create.png" alt="">
-                <h4 class="">Generar Pelea Pactada</h4>
+                <h4 class="font-weight-light">Generar Pelea Pactada</h4>
             </div>
-            <div class="tabla1">
-                <table class="table table-hover">
-                    <thead class="table-dark">
-                      <tr>
-                        <th scope="col">Numero</th>
-                        <th scope="col">Column </th>
-                        <th scope="col">Column </th>
-                        <th scope="col">Column </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="table-active">
-                        <th scope="row">Active</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="tabla2">
-                <table class="table table-hover">
-                    <thead class="table-dark">
-                      <tr>
-                        <th scope="col">Type</th>
-                        <th scope="col">Column </th>
-                        <th scope="col">Column </th>
-                        <th scope="col">Column </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="table-active">
-                        <th scope="row">Active</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                      </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="img-tablas">
-                <img src="../img/icons/swords.png" alt="">
-            </div>
-            <div class="subtitulo">
-                <div class="subtitulo-1 w-50 ml-4">
-                    <img src="../img/icons/shuffle.png" alt="">
-                    <h4>Generar Pelea Random</h4>
+            <main>
+                <div class="tabla1">
+                    <table class="table">
+                        <thead class="table-dark thead">
+                          <tr>
+                            <th scope="col">Numero</th>
+                            <th scope="col">Column </th>
+                            <th scope="col">Column </th>
+                            <th scope="col">Column </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="">
+                            <th scope="row">Active</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="subtitulo-2 w-25">  
-                    <button type="button" class="btn btn-warning disabled ml-lg-5">Gallos sin emparejar</button>                    
-                </div>      
+                <div class="tabla2">
+                    <table class="table">
+                        <thead class="table-dark">
+                          <tr>
+                            <th scope="col">Type</th>
+                            <th scope="col">Column </th>
+                            <th scope="col">Column </th>
+                            <th scope="col">Column </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="">
+                            <th scope="row">Active</th>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                            <td>Column content</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <button class="btn btn-danger form-control btn-lg" disabled>Generar Pelea</button>
+                </div>
+            </main>
+          </div>
+
+          <div class="content content-2">
+            <div class="subtitulo">
+                <img src="../img/icons/shuffle.png" alt="">
+                <h4>Generar Pelea Random</h4>  
             </div>
             <div class="condiciones" >
-                <div class="condiciones-titulo">
-                    <h5 class="font-weight-bold">Rango de Peso</h5>
-                </div>
-                <div class="d-flex condiciones-data">
-                    <div class="form-group ml-2 pr-3">
+                <div class="condiciones-data">
+                    <div class="condiciones-titulo">
+                        <h5 class="font-weight-bold">Rango de Peso</h5>
+                    </div>  
+                    <div class="form-group ml-2 pr-3 radiobtns">
                         <div class="custom-control custom-radio pt-4">
-                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-                        <label class="custom-control-label" for="customRadio1">Gramos</label>
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                            <label class="custom-control-label" for="customRadio1">Gramos</label>
                         </div>
                         <div class="custom-control custom-radio">
                         <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
                         <label class="custom-control-label" for="customRadio2">Onzas</label>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group cantidad-input">
                         <h6 class="font-weight-bold">Cantidad</h5>
                         <input type="text" class="w-75 text-center">
                     </div>
                 </div>
+
                 <div class="condiciones-data-cantidad">
                     <div class="condiciones-titulo">
                         <h5 class="font-weight-bold">Cantidad a Cotejar</h5>
                     </div>
-                    <div class="gallos-cantidad-texto">
+                    <div class="gallos-cantidad-texto ml-2 ">
                         <h6 class="font-weight-bold">Ingrese la cantidad</h6>
                     </div>
-                    <div class="cantidad-gallos">
-                        <input type="text" class="w-75">
-                        <button type="button" class="btn btn-danger btn-lg">Danger</button>
+                    <div class="cantidad-gallos mr-2">
+                        <input type="text" class="w-100">
+                    </div>
+                    <div class="btn-gallos">
+                        <button type="button" class="btn btn-danger w-100">Danger</button>
                     </div>
                 </div>
             </div>
@@ -214,10 +232,21 @@
                     </tbody>
                   </table>
             </div>
-        </main>
-    </div>
-</div>
-    
+          </div>
+          <div class="content content-3">
+            <div class="title">This is a Code content</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, debitis nesciunt! Consectetur officiis, libero nobis dolorem pariatur quisquam temporibus. Labore quaerat neque facere itaque laudantium odit veniam consectetur numquam delectus aspernatur, perferendis repellat illo sequi excepturi quos ipsam aliquid est consequuntur.</p>
+          </div>
+          <div class="content content-4">
+            <div class="title">This is a Help content</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim reprehenderit null itaq, odio repellat asperiores vel voluptatem magnam praesentium, eveniet iure ab facere officiis. Quod sequi vel, rem quam provident soluta nihil, eos. Illo oditu omnis cumque praesentium voluptate maxime voluptatibus facilis nulla ipsam quidem mollitia! Veniam, fuga, possimus. Commodi, fugiat aut ut quorioms stu necessitatibus, cumque laborum rem provident tenetur.</p>
+          </div>
+          <div class="content content-5">
+            <div class="title">This is a About content</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur officia sequi aliquam. Voluptatem distinctio nemo culpa veritatis nostrum fugit rem adipisci ea ipsam, non veniam ut aspernatur aperiam assumenda quis esse soluta vitae, placeat quasi. Iste dolorum asperiores hic impedit nesciunt atqu, officia magnam commodi iusto aliquid eaque, libero.</p>
+          </div>
+        </section>
+      </div> 
     <script src="../Js/indexhtm.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>

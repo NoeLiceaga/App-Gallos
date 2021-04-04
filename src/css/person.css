@@ -1,114 +1,20 @@
-:root {
-    --color-dark: #15181f;
-    --color-dark-x: #2d343f;
-    --color-dark-xx: #1f232b;
-    --color-light: #ffffff;
-    --color-grey: #f5f6f8;
+.container{
+    width: 75%;
+    margin-top: 2rem;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(43, 41, 41, 0.479);
+    font-family: 'Raleway', sans-serif;
 }
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
-    background-color: var(--color-grey);
-    color: var(--color-light);
-    letter-spacing: .05rem;
-    height: 100%;
+.container div{
+    padding: 5px;
 }
-
-.bg-light {
-    background-color: var(--color-light)!important;
-}
-
-.bg-dark {
-    background-color: var(--color-dark)!important;
-}
-
-.p-6 {
-    padding: 4rem 4rem;
-}
-
-.contact-box {
-    padding: 2rem;
-}
-
-.btn {
-    font-weight: 400;
-    padding: 1rem 2rem;
-    border-radius: 5rem;
-    min-width: 10rem;
-}
-.btn-outline-dark {
-    border: 2px solid var(--color-dark-xx);
-}
-
-
-.form-control {
-    background-color: var(--color-dark-xx);
-    border: 2px solid var(--color-dark-xx);
-    border-radius: .2rem;
-    padding: 1rem 1rem;
-}
-
-.register-bg {
-    min-height: 100vh;
-    flex: 111;
-}
-
-.testiomonial {
-    bottom: 10px;
-    width: 100%;
-}   
-.container-img{
-    justify-content: center;
+.img{
+    margin: auto;
+    justify-items: center;
     align-items: center;
-    margin: auto;
-    width: 25%;
+    margin-left: 40%;
 }
-.container-img img{
-    justify-self: center;
-    align-self: center;
-    margin: auto;
-    width: 75px;
-}
-@media (max-width: 575.98px) {
-    .p-6 {
-        padding: 2rem;
-    }
-
-    .contact-box {
-        padding: 0;
-    }
-
-    .width-100 {
-        width: 100%;
-    }
-}
-
-@media (max-width: 1200px) { 
-    .register-bg {
-        min-height: 20vh;
-    }
-}
-@media screen and (min-width:1200px){
-    body{
-        overflow-y: hidden;
-    }
-    .container-img img{
-        visibility: hidden;
-    }
-    .container-img{
-        background-image: url(../img/gallos01.png);
-        background-repeat: no-repeat;
-        background-size:cover;
-        width: 100%;
-        height:78%;
-        padding: 30px;
-    }
-    .register-bg{
-        display: block !important;
-    }
-    .testiomonial{
-        width: 535px;
-    }
+input:hover{
+    border:  2px solid rgb(224, 6, 6);
 }
